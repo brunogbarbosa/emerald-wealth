@@ -653,8 +653,57 @@ export default function App() {
               ))}
             </div>
           </div>
+
+          {/* MENSAGENS REAIS */}
+          <div className="mt-24 md:mt-32">
+            <div className="flex items-center gap-4 mb-6 fade-up">
+              <div style={{ height: 1, width: 36, background: "var(--emerald)" }} />
+              <span
+                className="font-inter uppercase"
+                style={{ color: "var(--emerald)", fontSize: 10, letterSpacing: "0.3em", fontWeight: 600 }}
+              >
+                Mensagens reais · WhatsApp
+              </span>
+            </div>
+            <h3
+              className="font-syne font-extrabold fade-up max-w-3xl"
+              style={{
+                fontSize: "clamp(24px,5vw,40px)",
+                letterSpacing: "-0.02em",
+                lineHeight: 1.1,
+                color: "var(--white)",
+                wordBreak: "break-word",
+              }}
+            >
+              O que clientes da Letícia <span style={{ color: "var(--emerald)" }}>dizem todos os dias.</span>
+            </h3>
+
+            <div className="mt-12 grid md:grid-cols-3 gap-6">
+              {[wa1, wa2, wa3].map((img, i) => (
+                <div
+                  key={i}
+                  className="fade-up overflow-hidden"
+                  style={{
+                    background: "var(--panel)",
+                    border: "1px solid var(--line)",
+                    borderRadius: 6,
+                    padding: 14,
+                  }}
+                >
+                  <img
+                    src={img.url}
+                    alt={`Mensagem real de cliente ${i + 1}`}
+                    className="w-full h-auto block"
+                    style={{ borderRadius: 4, objectFit: "contain" }}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
+
 
       {/* CTA FINAL */}
       <section
