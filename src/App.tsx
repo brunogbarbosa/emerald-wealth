@@ -1,9 +1,13 @@
 import { useEffect, useRef } from "react";
+import wa1 from "@/assets/wa-1.png.asset.json";
+import wa2 from "@/assets/wa-2.png.asset.json";
+import wa3 from "@/assets/wa-3.png.asset.json";
 
 const LETICIA_1 = "/leticia-1.png";
 const LETICIA_2 = "/leticia-2.png";
 
 const WHATS = "https://wa.me/SEU_NUMERO";
+
 
 function useReveal() {
   useEffect(() => {
