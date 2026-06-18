@@ -521,7 +521,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2
             className="font-syne font-extrabold fade-up"
-            style={{ fontSize: "clamp(36px,5vw,60px)", letterSpacing: "-0.02em" }}
+            style={{ fontSize: "clamp(30px,7vw,60px)", letterSpacing: "-0.02em", wordBreak: "break-word" }}
           >
             <span style={{ color: "var(--white)" }}>POR QUE </span>
             <span style={{ color: "var(--emerald)" }}>XP INVESTIMENTOS?</span>
