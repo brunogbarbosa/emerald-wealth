@@ -585,7 +585,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2
             className="font-syne font-extrabold fade-up"
-            style={{ fontSize: "clamp(34px,4.5vw,48px)", letterSpacing: "-0.02em" }}
+            style={{ fontSize: "clamp(28px,7vw,48px)", letterSpacing: "-0.02em", wordBreak: "break-word" }}
           >
             <span style={{ color: "var(--white)" }}>QUEM INVESTIU, </span>
             <span style={{ color: "var(--emerald)" }}>CONFIA.</span>
