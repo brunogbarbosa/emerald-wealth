@@ -8,7 +8,7 @@ const WA_URLS = [wa1Img, wa2Img, wa3Img];
 const LETICIA_1 = "/leticia-1.png";
 const LETICIA_2 = "/leticia-2.png";
 
-const WHATS = "https://wa.me/SEU_NUMERO";
+const WHATS = "https://wa.me/5524988116465";
 
 
 function useReveal() {
