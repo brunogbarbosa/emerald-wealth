@@ -186,10 +186,11 @@ export default function App() {
             <h1
               className="font-syne font-extrabold fade-up"
               style={{
-                fontSize: "clamp(58px, 8vw, 120px)",
+                fontSize: "clamp(40px, 12vw, 120px)",
                 color: "var(--white)",
                 lineHeight: 0.9,
                 letterSpacing: "-0.02em",
+                wordBreak: "break-word",
               }}
             >
               SEU
@@ -397,7 +398,7 @@ export default function App() {
             </div>
             <h2
               className="font-syne font-extrabold mt-5 fade-up"
-              style={{ color: "var(--white)", fontSize: 44, lineHeight: 1, letterSpacing: "-0.01em" }}
+              style={{ color: "var(--white)", fontSize: "clamp(36px,9vw,44px)", lineHeight: 1, letterSpacing: "-0.01em" }}
             >
               LETÍCIA
               <br />
@@ -447,7 +448,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2
             className="font-syne font-extrabold fade-up"
-            style={{ color: "var(--white)", fontSize: "clamp(40px,6vw,68px)", letterSpacing: "-0.02em" }}
+            style={{ color: "var(--white)", fontSize: "clamp(36px,8vw,68px)", letterSpacing: "-0.02em" }}
           >
             SERVIÇOS
           </h2>
@@ -520,7 +521,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2
             className="font-syne font-extrabold fade-up"
-            style={{ fontSize: "clamp(36px,5vw,60px)", letterSpacing: "-0.02em" }}
+            style={{ fontSize: "clamp(30px,7vw,60px)", letterSpacing: "-0.02em", wordBreak: "break-word" }}
           >
             <span style={{ color: "var(--white)" }}>POR QUE </span>
             <span style={{ color: "var(--emerald)" }}>XP INVESTIMENTOS?</span>
@@ -584,7 +585,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2
             className="font-syne font-extrabold fade-up"
-            style={{ fontSize: "clamp(34px,4.5vw,48px)", letterSpacing: "-0.02em" }}
+            style={{ fontSize: "clamp(28px,7vw,48px)", letterSpacing: "-0.02em", wordBreak: "break-word" }}
           >
             <span style={{ color: "var(--white)" }}>QUEM INVESTIU, </span>
             <span style={{ color: "var(--emerald)" }}>CONFIA.</span>
@@ -664,7 +665,7 @@ export default function App() {
           <div className="cta-line mx-auto mb-10" />
           <h2
             className="font-syne font-extrabold"
-            style={{ fontSize: "clamp(46px,7vw,80px)", letterSpacing: "-0.02em", lineHeight: 1 }}
+            style={{ fontSize: "clamp(34px,9vw,80px)", letterSpacing: "-0.02em", lineHeight: 1, wordBreak: "break-word" }}
           >
             <span style={{ color: "var(--white)" }}>COMECE A</span>
             <br />
