@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { WA1, WA2, WA3 } from "./images/base64";
+import wa1Img from "./assets/wa-1.png";
+import wa2Img from "./assets/wa-2.png";
+import wa3Img from "./assets/wa-3.png";
 
-const WA_URLS = [
-  `data:image/png;base64,${WA1}`,
-  `data:image/png;base64,${WA2}`,
-  `data:image/png;base64,${WA3}`,
-];
+const WA_URLS = [wa1Img, wa2Img, wa3Img];
 
 const LETICIA_1 = "/leticia-1.png";
 const LETICIA_2 = "/leticia-2.png";
