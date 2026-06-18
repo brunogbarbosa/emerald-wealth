@@ -186,10 +186,11 @@ export default function App() {
             <h1
               className="font-syne font-extrabold fade-up"
               style={{
-                fontSize: "clamp(58px, 8vw, 120px)",
+                fontSize: "clamp(40px, 12vw, 120px)",
                 color: "var(--white)",
                 lineHeight: 0.9,
                 letterSpacing: "-0.02em",
+                wordBreak: "break-word",
               }}
             >
               SEU
