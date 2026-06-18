@@ -448,7 +448,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2
             className="font-syne font-extrabold fade-up"
-            style={{ color: "var(--white)", fontSize: "clamp(40px,6vw,68px)", letterSpacing: "-0.02em" }}
+            style={{ color: "var(--white)", fontSize: "clamp(36px,8vw,68px)", letterSpacing: "-0.02em" }}
           >
             SERVIÇOS
           </h2>
