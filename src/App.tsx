@@ -1,7 +1,11 @@
-import { useEffect, useRef } from "react";
-import wa1 from "@/assets/wa-1.png.asset.json";
-import wa2 from "@/assets/wa-2.png.asset.json";
-import wa3 from "@/assets/wa-3.png.asset.json";
+import { useEffect, useRef, useState } from "react";
+import { WA1, WA2, WA3 } from "./images/base64";
+
+const WA_URLS = [
+  `data:image/png;base64,${WA1}`,
+  `data:image/png;base64,${WA2}`,
+  `data:image/png;base64,${WA3}`,
+];
 
 const LETICIA_1 = "/leticia-1.png";
 const LETICIA_2 = "/leticia-2.png";
@@ -678,8 +682,9 @@ export default function App() {
               O que clientes da Letícia <span style={{ color: "var(--emerald)" }}>dizem todos os dias.</span>
             </h3>
 
-            <div className="mt-12 grid md:grid-cols-3 gap-6">
-              {[wa1, wa2, wa3].map((img, i) => (
+            {/* Desktop grid */}
+            <div className="hidden md:grid md:grid-cols-3 gap-6 mt-12">
+              {WA_URLS.map((url, i) => (
                 <div
                   key={i}
                   className="fade-up overflow-hidden"
@@ -691,7 +696,7 @@ export default function App() {
                   }}
                 >
                   <img
-                    src={img.url}
+                    src={url}
                     alt={`Mensagem real de cliente ${i + 1}`}
                     className="w-full h-auto block"
                     style={{ borderRadius: 4, objectFit: "contain" }}
@@ -700,6 +705,9 @@ export default function App() {
                 </div>
               ))}
             </div>
+
+            {/* Mobile carousel */}
+            <MobileCarousel images={WA_URLS} />
           </div>
         </div>
       </section>
@@ -837,6 +845,111 @@ export default function App() {
           />
         </svg>
       </a>
+    </div>
+  );
+}
+
+function MobileCarousel({ images }: { images: string[] }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [canLeft, setCanLeft] = useState(false);
+  const [canRight, setCanRight] = useState(true);
+
+  const check = () => {
+    const el = ref.current;
+    if (!el) return;
+    setCanLeft(el.scrollLeft > 0);
+    setCanRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
+  };
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    check();
+    el.addEventListener("scroll", check);
+    return () => el.removeEventListener("scroll", check);
+  }, []);
+
+  const scroll = (dir: "left" | "right") => {
+    const el = ref.current;
+    if (!el) return;
+    el.scrollBy({ left: dir === "left" ? -el.clientWidth * 0.85 : el.clientWidth * 0.85, behavior: "smooth" });
+  };
+
+  return (
+    <div className="md:hidden mt-12 relative">
+      <div
+        ref={ref}
+        className="flex gap-4 overflow-x-auto scrollbar-hide pb-4 -mx-6 px-6"
+        style={{ scrollSnapType: "x mandatory" }}
+      >
+        {images.map((url, i) => (
+          <div
+            key={i}
+            className="flex-shrink-0 fade-up"
+            style={{
+              width: "85vw",
+              maxWidth: 340,
+              scrollSnapAlign: "start",
+              background: "var(--panel)",
+              border: "1px solid var(--line)",
+              borderRadius: 6,
+              padding: 14,
+            }}
+          >
+            <img
+              src={url}
+              alt={`Mensagem real de cliente ${i + 1}`}
+              className="w-full h-auto block"
+              style={{ borderRadius: 4, objectFit: "contain" }}
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Arrows */}
+      <div className="flex items-center justify-center gap-4 mt-4">
+        <button
+          onClick={() => scroll("left")}
+          disabled={!canLeft}
+          className="flex items-center justify-center"
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: "50%",
+            background: canLeft ? "var(--emerald)" : "var(--panel)",
+            color: canLeft ? "var(--void)" : "var(--muted)",
+            border: "1px solid var(--line)",
+            opacity: canLeft ? 1 : 0.4,
+            transition: "all 300ms ease",
+          }}
+          aria-label="Anterior"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <button
+          onClick={() => scroll("right")}
+          disabled={!canRight}
+          className="flex items-center justify-center"
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: "50%",
+            background: canRight ? "var(--emerald)" : "var(--panel)",
+            color: canRight ? "var(--void)" : "var(--muted)",
+            border: "1px solid var(--line)",
+            opacity: canRight ? 1 : 0.4,
+            transition: "all 300ms ease",
+          }}
+          aria-label="Próximo"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+      </div>
     </div>
   );
 }

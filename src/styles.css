@@ -102,4 +102,7 @@ body::before {
   background: linear-gradient(180deg, var(--panel), rgba(29, 184, 122, 0.06));
 }
 
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
 button, a { cursor: pointer; transition: all 300ms ease; }
