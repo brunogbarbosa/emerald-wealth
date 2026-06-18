@@ -398,7 +398,7 @@ export default function App() {
             </div>
             <h2
               className="font-syne font-extrabold mt-5 fade-up"
-              style={{ color: "var(--white)", fontSize: 44, lineHeight: 1, letterSpacing: "-0.01em" }}
+              style={{ color: "var(--white)", fontSize: "clamp(36px,9vw,44px)", lineHeight: 1, letterSpacing: "-0.01em" }}
             >
               LETÍCIA
               <br />
