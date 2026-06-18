@@ -665,7 +665,7 @@ export default function App() {
           <div className="cta-line mx-auto mb-10" />
           <h2
             className="font-syne font-extrabold"
-            style={{ fontSize: "clamp(46px,7vw,80px)", letterSpacing: "-0.02em", lineHeight: 1 }}
+            style={{ fontSize: "clamp(34px,9vw,80px)", letterSpacing: "-0.02em", lineHeight: 1, wordBreak: "break-word" }}
           >
             <span style={{ color: "var(--white)" }}>COMECE A</span>
             <br />
