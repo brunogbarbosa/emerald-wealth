@@ -783,7 +783,14 @@ export default function App() {
               className="font-inter mt-1 uppercase"
               style={{ color: "var(--muted)", fontSize: 11, letterSpacing: "0.18em" }}
             >
-              InvestSmart · XP Investimentos
+              Assessora · ANCORD / CVM
+            </div>
+            <div
+              className="font-inter mt-3"
+              style={{ color: "var(--muted)", fontSize: 12, lineHeight: 1.6 }}
+            >
+              Volta Redonda / RJ<br />
+              Atendimento presencial e online
             </div>
           </div>
           <div className="flex flex-col gap-3 font-inter uppercase text-[12px]" style={{ color: "var(--muted)", letterSpacing: "0.18em" }}>
