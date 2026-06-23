@@ -75,7 +75,7 @@ export default function App() {
             className="font-inter uppercase text-[10px] mt-1 hidden sm:inline"
             style={{ color: "var(--muted)", letterSpacing: "0.18em" }}
           >
-            INVESTSMART · XP INVESTIMENTOS
+            Assessora de Investimentos · ANCORD / CVM
           </span>
         </a>
 
