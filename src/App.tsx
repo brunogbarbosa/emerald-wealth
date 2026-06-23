@@ -392,7 +392,7 @@ export default function App() {
                 fontWeight: 600,
               }}
             >
-              InvestSmart XP
+              ANCORD · CVM
             </div>
           </div>
           <div className="md:col-span-7 md:pl-8">
