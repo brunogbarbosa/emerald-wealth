@@ -815,7 +815,7 @@ export default function App() {
           className="max-w-7xl mx-auto mt-14 pt-8 font-inter text-[11px]"
           style={{ color: "var(--muted)", borderTop: "1px solid var(--line)" }}
         >
-          © 2025 Letícia Cristina · Assessora de Investimentos certificada ANCORD · Registrada na CVM
+          © 2026 Letícia Cristina · Assessora de Investimentos certificada ANCORD · Registrada na CVM
         </div>
         <div
           className="max-w-7xl mx-auto mt-4 font-inter"
