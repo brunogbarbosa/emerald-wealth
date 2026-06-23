@@ -185,7 +185,7 @@ export default function App() {
                   fontWeight: 600,
                 }}
               >
-                InvestSmart · XP Investimentos
+                Assessora certificada ANCORD · CVM
               </span>
             </div>
 
