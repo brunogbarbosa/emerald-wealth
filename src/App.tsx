@@ -157,7 +157,7 @@ export default function App() {
               fontWeight: 600,
             }}
           >
-            Assessora · InvestSmart XP
+            Volta Redonda / RJ · Atendimento online
           </div>
         </div>
 
