@@ -75,7 +75,7 @@ export default function App() {
             className="font-inter uppercase text-[10px] mt-1 hidden sm:inline"
             style={{ color: "var(--muted)", letterSpacing: "0.18em" }}
           >
-            INVESTSMART · XP INVESTIMENTOS
+            Assessora de Investimentos · ANCORD / CVM
           </span>
         </a>
 
@@ -157,7 +157,7 @@ export default function App() {
               fontWeight: 600,
             }}
           >
-            Assessora · InvestSmart XP
+            Volta Redonda / RJ · Atendimento online
           </div>
         </div>
 
@@ -185,7 +185,7 @@ export default function App() {
                   fontWeight: 600,
                 }}
               >
-                InvestSmart · XP Investimentos
+                Assessora certificada ANCORD · CVM
               </span>
             </div>
 
@@ -249,9 +249,9 @@ export default function App() {
 
             <div className="flex flex-wrap items-center gap-5 mt-10 fade-up">
               {[
-                "R$ 30bi sob custódia",
-                "Top escritório XP",
-                "Atendimento personalizado",
+                "4 anos de profissão",
+                "Volta Redonda / RJ + Online",
+                "Certificação ANCORD · CVM",
               ].map((m, i) => (
                 <div key={m} className="flex items-center gap-5">
                   {i > 0 && (
@@ -392,7 +392,7 @@ export default function App() {
                 fontWeight: 600,
               }}
             >
-              InvestSmart XP
+              ANCORD · CVM
             </div>
           </div>
           <div className="md:col-span-7 md:pl-8">
@@ -414,22 +414,25 @@ export default function App() {
               className="font-syne mt-5 fade-up"
               style={{ color: "var(--emerald)", fontSize: 20, fontWeight: 600 }}
             >
-              Assessora de Investimentos · InvestSmart XP
+              Assessora de Investimentos · 4 anos de mercado
             </div>
             <p
               className="font-inter mt-6 fade-up max-w-xl"
               style={{ color: "var(--muted)", fontSize: 16, lineHeight: 1.7, fontWeight: 300 }}
             >
-              Especialista em assessoria de investimentos, credenciada ao maior escritório
-              parceiro XP do país. Foco em planejamento patrimonial personalizado e construção
-              de riqueza de longo prazo — estratégia construída em torno da sua vida, dos seus
-              objetivos e do seu tempo.
+              Há 4 anos no mercado financeiro, com certificação ANCORD e registro
+              na CVM (Comissão de Valores Mobiliários). Atua a partir do escritório
+              físico em Volta Redonda/RJ e também atende clientes 100% online em
+              todo o Brasil — com a estrutura da InvestSmart, escritório credenciado
+              à XP Investimentos. Foco em planejamento patrimonial personalizado e
+              construção de riqueza de longo prazo.
             </p>
             <div className="mt-10 grid gap-4">
               {[
-                "Atendimento personalizado",
-                "Estrutura InvestSmart XP",
-                "Estratégia de longo prazo",
+                "Certificação ANCORD · Registro CVM",
+                "Escritório em Volta Redonda/RJ + Atendimento online",
+                "4 anos de mercado financeiro",
+                "Estratégia de longo prazo e personalizada",
               ].map((d) => (
                 <div
                   key={d}
@@ -780,7 +783,14 @@ export default function App() {
               className="font-inter mt-1 uppercase"
               style={{ color: "var(--muted)", fontSize: 11, letterSpacing: "0.18em" }}
             >
-              InvestSmart · XP Investimentos
+              Assessora · ANCORD / CVM
+            </div>
+            <div
+              className="font-inter mt-3"
+              style={{ color: "var(--muted)", fontSize: 12, lineHeight: 1.6 }}
+            >
+              Volta Redonda / RJ<br />
+              Atendimento presencial e online
             </div>
           </div>
           <div className="flex flex-col gap-3 font-inter uppercase text-[12px]" style={{ color: "var(--muted)", letterSpacing: "0.18em" }}>
@@ -805,7 +815,7 @@ export default function App() {
           className="max-w-7xl mx-auto mt-14 pt-8 font-inter text-[11px]"
           style={{ color: "var(--muted)", borderTop: "1px solid var(--line)" }}
         >
-          © 2025 Letícia Cristina · Assessora de Investimentos · InvestSmart XP
+          © 2025 Letícia Cristina · Assessora de Investimentos certificada ANCORD · Registrada na CVM
         </div>
         <div
           className="max-w-7xl mx-auto mt-4 font-inter"
