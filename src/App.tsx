@@ -249,9 +249,9 @@ export default function App() {
 
             <div className="flex flex-wrap items-center gap-5 mt-10 fade-up">
               {[
-                "R$ 30bi sob custódia",
-                "Top escritório XP",
-                "Atendimento personalizado",
+                "4 anos de profissão",
+                "Volta Redonda / RJ + Online",
+                "Certificação ANCORD · CVM",
               ].map((m, i) => (
                 <div key={m} className="flex items-center gap-5">
                   {i > 0 && (
